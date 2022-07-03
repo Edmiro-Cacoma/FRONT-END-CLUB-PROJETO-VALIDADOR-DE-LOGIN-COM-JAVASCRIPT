@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    cursor: pointer;
+}
+
+body,
+html {
+    background: rgb(51, 98, 139);
+    min-height: 100vh;
+    background-position: center left;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 380px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #f9f9f9;
+}
+form .image {
+    position: absolute;
+    left: 47%;
+    top: 23%;
+}
+
+form .image img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid rgb(70, 137, 196);
+    border-radius: 50%;
+}
+
+form .inputs-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form .field {
+    width: 100%;
+    margin-bottom:15px;
+}
+
+form .input-area {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    
+}
+
+form input {
+    width: 300px;
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px rgb(89, 171, 244);
+    margin: 10px;
+    margin-left: 0px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+form div input::after {
+    border-color: #3692e7;
+}
+
+form .field input:focus,
+form .field.valid input {
+    border-color: #5372f0;
+}
+
+form .field.error input {
+    border-color: #dc3545;
+}
+
+form .field .error-txt {
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+form .field .error {
+    display: none;
+}
+
+form .field.error .error {
+    display: block;
+}
+
+.btn {
+    padding-left: 90px;
+    position: absolute;
+    top: 52%;
+    left: 32%;
+}
+
+.btn input {
+    margin-top: 90px;
+    width: 295px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 22px;
+    margin-left: 0;
+    background-color: #eee;
+}
+
+.btn input:hover {
+    color: #f9f9f9;
+    background-color: #3692e7;
+}
+
+form p {
+    position: absolute;
+    top: 78%;
+    left: 42%;
+    font-weight: 200;
+}
+
+form p a {
+    color: #3692e7;
+    text-decoration: none;
+}
+
+form p a:hover {
+    color: orange;
+}
